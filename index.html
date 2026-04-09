@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game App Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="responsive-shell.css">
+  <style>
+    .title {
+      left: 403px;
+      top: 128px;
+      width: 609px;
+      height: 109px;
+      color: transparent;
+      background: linear-gradient(90deg, rgba(94, 28, 103, 1) 75%, rgba(163, 52, 182, 1) 88%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      white-space: pre;
+    }
+
+    .label {
+      position: absolute;
+      margin: 0;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 1.2102272510528564;
+      color: #000000;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    .tile-link {
+      position: absolute;
+      width: 186px;
+      height: 186px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s ease, box-shadow 0.2s ease, outline-color 0.2s ease;
+    }
+
+    .tile-link img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .tile-link:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.24);
+      outline: 4px solid rgba(94, 28, 103, 0.35);
+    }
+
+    .hotel {
+      left: 365px;
+      top: 435px;
+      width: 189px;
+      height: 29px;
+    }
+
+    .gen-ai-bias {
+      left: 784px;
+      top: 432px;
+      width: 132px;
+      height: 29px;
+    }
+
+    .app-3 {
+      left: 440px;
+      top: 700px;
+      width: 69px;
+      height: 29px;
+    }
+
+    .inspired {
+      left: 790px;
+      top: 703px;
+      width: 111px;
+      height: 29px;
+    }
+
+    .logo1 {
+      left: 365px;
+      top: 237px;
+    }
+
+    .julianna {
+      left: 757px;
+      top: 237px;
+    }
+
+    .logo7 {
+      left: 382px;
+      top: 502px;
+    }
+
+    .logo5 {
+      left: 757px;
+      top: 508px;
+    }
+  </style>
+</head>
+<body>
+  <div class="viewport-shell">
+    <div class="stage">
+      <main class="design-root" aria-label="Landing page">
+        <h1 class="page-title title">     Select Your App! </h1>
+
+        <a class="tile-link logo1" href="hotel.html" aria-label="Open Hotel by Bot-tell">
+          <img src="assets/logo1-1.png" alt="Hotel by Bot-tell app logo">
+        </a>
+        <a class="tile-link julianna" href="gen-ai-bias.html" aria-label="Open Gen AI Bias">
+          <img src="assets/julianna-1.png" alt="Gen AI Bias app logo">
+        </a>
+        <a class="tile-link logo7" href="app3.html" aria-label="Open App 3">
+          <img src="assets/logo7-1.png" alt="App 3 logo">
+        </a>
+        <a class="tile-link logo5" href="inspired.html" aria-label="Open InspAIred">
+          <img src="assets/logo5-1.png" alt="InspAIred app logo">
+        </a>
+
+        <p class="label hotel">Hotel by Bot-tell</p>
+        <p class="label gen-ai-bias">Gen AI Bias</p>
+        <p class="label app-3">App 3</p>
+        <p class="label inspired">InspAIred</p>
+      </main>
+    </div>
+  </div>
+  <script src="responsive-shell.js"></script>
+</body>
+</html>

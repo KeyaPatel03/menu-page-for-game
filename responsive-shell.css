@@ -1,0 +1,76 @@
+:root {
+  --design-width: 1280;
+  --design-height: 832;
+  --scale: 1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+.viewport-shell {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dcdcdc;
+  padding: 12px;
+}
+
+.stage {
+  position: relative;
+  width: calc(var(--design-width) * 1px * var(--scale));
+  height: calc(var(--design-height) * 1px * var(--scale));
+}
+
+.design-root {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(var(--design-width) * 1px);
+  height: calc(var(--design-height) * 1px);
+  transform: scale(var(--scale));
+  transform-origin: top left;
+  background: #ededed;
+  overflow: hidden;
+}
+
+.page-title {
+  position: absolute;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.21;
+}
+
+.nav-button {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 170px;
+  height: 52px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  background: #5e1c67;
+}
+
+.nav-button:hover {
+  background: #7e2b8a;
+}
